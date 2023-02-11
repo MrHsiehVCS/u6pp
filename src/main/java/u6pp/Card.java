@@ -24,7 +24,8 @@ public class Card {
     public static String WILD = "WILD";
     public static String WILD_DRAW_4 = "WILD_DRAW_4";
 
-    public static String[] COLORS = {RED, GREEN, BLUE, YELLOW, WILD};
+    // Wild color is the default color for wilds, before they are played. 
+    public static String[] COLORS = {RED, GREEN, BLUE, YELLOW, WILD}; 
     public static String[] VALUES = {ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, 
         DRAW_2, REVERSE, SKIP, WILD, WILD_DRAW_4};
 
