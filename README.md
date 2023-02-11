@@ -60,6 +60,8 @@ Next, create the `CardStack` class. It purposely restricts the access to its int
 
 You might notice in `CardStackTests` that there is a function at the top that is tagged with `@BeforeEach`. This function runs once before each test, and each test starts with a clean slate. No variables or anything are saved between tests.
 
+For `shuffle`, use the [Fisher-Yates algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle).
+
 ### `Uno.java`
 
 After `CardStack`, you should create the `Uno class`. This class has a lot of different functionality. However, if you go down the tests from top to bottom, it will lead you in a reasonable implementation order. There are a lot of tests because each test only tests a small part of a function's effects. Additionally, there are a lot of required methods so that it is very clear what each method does. This prevents any method from having too many intertwined responsibilities, leading to clearer abstraction. This is also a great reason for making helper methods.
